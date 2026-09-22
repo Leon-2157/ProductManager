@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root,
+[data-bs-theme="dark"] {
+  --bs-body-font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  --bs-body-bg: #0b0f19;
+  --bs-body-color: #e2e8f0;
+  --bs-border-color: #1e293b;
+  --bs-card-bg: #111827;
+  --bs-primary: #10b981;
+  --bs-primary-rgb: 16, 185, 129;
+  --bs-success: #10b981;
+  --bs-success-rgb: 16, 185, 129;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-glass {
+  background-color: rgba(11, 15, 25, 0.85) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--bs-border-color);
+}
+
+.brand-badge {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #10b981, #047857);
+}
+
+.card-product {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  border: 1px solid var(--bs-border-color);
+}
+
+.card-product:hover {
+  transform: translateY(-3px);
+  border-color: rgba(16, 185, 129, 0.4);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.6), 0 0 12px rgba(16, 185, 129, 0.12);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #10b981, #059669);
+  border: none;
+  font-weight: 500;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background: linear-gradient(135deg, #059669, #047857);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.form-control,
+.form-select {
+  background-color: #141c2e;
+  border-color: #24324a;
+  color: #f1f5f9;
+}
+
+.form-control:focus,
+.form-select:focus {
+  background-color: #141c2e;
+  border-color: #10b981;
+  box-shadow: 0 0 0 0.25rem rgba(16, 185, 129, 0.2);
+  color: #fff;
+}
+
+.stock-meter {
+  height: 5px;
+  background-color: #1e293b;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.stock-meter-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.stat-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+}
