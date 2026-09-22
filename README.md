@@ -1,6 +1,6 @@
 # Product Manager
 
-A web-based inventory management application built with native PHP 8.2 and MySQL 8.0 running inside Docker containers. Implements a **Front Controller (Single Entry Point)** pattern with a **Controller-View** architecture, a responsive **Bootstrap 5.3** dark theme enhanced by a minimal surgical CSS layer, and multi-layered web security (CSRF, XSS, SQL Injection).
+A web-based inventory management application built with native PHP and MySQL running inside Docker containers. Implements a **Front Controller (Single Entry Point)** pattern with a **Controller-View** architecture, and multi-layered web security (CSRF, XSS, SQL Injection).
 
 > **Environment Consistency:** Containerized with Docker to guarantee cross-platform environment parity (Linux, macOS, Windows) and eliminate local environment discrepancies, ensuring reproducible runtime behavior across any machine without relying on OS-specific local server stacks.
 
